@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentBox from './App';
+import Demo from './App';
 
-ReactDOM.render(React.createElement(CommentBox,null), document.getElementById('root'));
+
+ReactDOM.render(
+    <Demo/>, document.getElementById('root')
+);
+

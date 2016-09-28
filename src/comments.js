@@ -10,7 +10,7 @@ export class CommentForm extends Component {
     }
 }
 
-export default class CommentField extends Component {
+export default class CommentList extends Component {
     render (){
         const md = new Remarkable({html: true});
         let commentList = this.props.data.map(function(comment){
@@ -20,8 +20,8 @@ export default class CommentField extends Component {
             <div class="CommentField">
                 {commentList}
                 <Comment author="biao" children="testtest"/>
-                <Comment author="biao2">I'm a <strong>children</strong> </Comment>
-                <Comment author="biao2">{md.render("I'm a <strong>RemarkDown TEST</strong>")} </Comment>
+                <Comment author="biao2">I'm a <strong>children2123</strong> </Comment>
+                <Comment author="biao2">{md.render("I'm a <strong>RemarkDown TEST123123</strong>")} </Comment>
             </div>
         )
     }

@@ -57,6 +57,7 @@ var users = require('./routes/users');
 var dish = require('./routes/dish');
 var promotion = require('./routes/promotion');
 var leadership = require('./routes/leadership');
+var comments = require('./routes/comments');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -68,6 +69,7 @@ app.use('/users', users);
 app.use('/dishes', dish);
 app.use('/promotions', promotion);
 app.use('/leadership', leadership);
+app.use('/comments', comments);
 
 app.listen(port, '0.0.0.0', function onStart(err) {
   if (err) {

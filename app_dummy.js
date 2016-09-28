@@ -11,6 +11,7 @@ var users = require('./routes/users');
 var dish = require('./routes/dish'); 
 var promotion = require('./routes/promotion'); 
 var leadership = require('./routes/leadership'); 
+var comments = require('./routes/comments');
 var app = express();
 
 // view engine setup
@@ -31,7 +32,8 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/dishes', dish);
 app.use('/promotions', promotion);
-app.use('/leadership', leadership);
+//app.use('/leadership', leadership);
+//app.use('/comments', comments);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
