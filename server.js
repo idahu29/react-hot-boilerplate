@@ -52,6 +52,15 @@ app.get('/', function response(req, res) {
   //res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
   //res.end();
 });
+app.get('/countries.topo.json', function(req, res){
+  res.sendFile(path.join(__dirname, 'countries.topo.json'));
+});
+app.get('/hong_kong.topo.json', function(req, res){
+  res.sendFile(path.join(__dirname, 'hong_kong.topo.json'));
+});
+app.get('/countries.geo.json', function(req, res){
+  res.sendFile(path.join(__dirname, 'countries.geo.json'));
+});
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var dish = require('./routes/dish');
