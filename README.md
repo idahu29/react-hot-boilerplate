@@ -6,6 +6,8 @@
 React Hot Boilerplate
 =====================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4a0e69af027a431bb7274f82f3148d43)](https://www.codacy.com/app/idahu29/react-hot-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=idahu29/react-hot-boilerplate&utm_campaign=badger)
+
 The minimal dev environment to enable live-editing React components.
 
 ### Usage
