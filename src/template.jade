@@ -1,0 +1,11 @@
+// react: comment
+.comment
+  h2.commentAuthor= props.author
+  span!= rawMarkup
+  div= props.text
+
+// react: list
+.commentList
+  - props.data.forEach(function(comment, index){
+      Comment(author=comment.author, text=comment.text key=index)
+  - })

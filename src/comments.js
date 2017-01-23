@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import Remarkable from 'remarkable';
+const {comment, list} = require('./template.jade')
 
 export class CommentForm extends Component {
     render (){
@@ -13,12 +14,13 @@ export class CommentForm extends Component {
 export default class CommentList extends Component {
     render (){
         const md = new Remarkable({html: true});
-        let commentList = this.props.data.map(function(comment){
-            return (<Comment author={comment.author}>{comment.markdown?md.render(comment.text):comment.text}</Comment>)
-        })
+        // let commentList = this.props.data.map(function(comment){
+        //     return (comment(comment))
+        //       return (<Comment author={comment.author}>{comment.markdown?md.render(comment.text):comment.text}</Comment>)
+        // })
         return (
             <div class="CommentField">
-                {commentList}
+                {list}
                 <Comment author="biao" children="testtest"/>
                 <Comment author="biao2">I'm a <strong>children2123</strong> </Comment>
                 <Comment author="biao2">{md.render("I'm a <strong>RemarkDown TEST123123</strong>")} </Comment>
